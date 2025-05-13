@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-лэпбук: Советские танки от Т-34 до Т-90</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2a/Camouflage_pattern_001.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        img { max-width: 100%; height: auto; }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для читаемости */
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">Советские танки: От Т-34 до Т-90</h1>
+        <div class="flex flex-wrap justify-center gap-2 mb-4">
+            <button class="tab-button px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" data-tab="t35">Т-35</button>
+            <button class="tab-button px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" data-tab="t37">Т-37</button>
+            <button class="tab-button px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" data-tab="t38">Т-38</button>
+            <button class="tab-button px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" data-tab="t34">Т-34</button>
+            <button class="tab-button px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" data-tab="t40">Т-40</button>
+            <button class="tab-button px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" data-tab="t44">Т-44</button>
+            <button class="tab-button px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" data-tab="t55">Т-55</button>
+            <button class="tab-button px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" data-tab="t62">Т-62</button>
+            <button class="tab-button px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" data-tab="t72">Т-72</button>
+            <button class="tab-button px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" data-tab="t90">Т-90</button>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+            <div id="t35" class="tab-content active">
+                <h2 class="text-2xl font-semibold mb-4">Т-35 (1933)</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/T-35_1.jpg" alt="Т-35" class="mb-4">
+                <p><strong>История:</strong> Тяжелый многобашенный танк, разработан в 1930-х годах для прорыва укрепленных линий. Производился в 1933–1939 годах, выпущено 61 единица.</p>
+                <p><strong>Характеристики:</strong> Пять башен, 76,2-мм пушка, две 45-мм пушки, броня до 30 мм, экипаж 11 человек, скорость до 30 км/ч.</p>
+                <p><strong>Нововведения:</strong> Многобашенная компоновка, мощное вооружение для своего времени.</p>
+                <p><strong>Польша:</strong> Т-35 не использовался и не производился в Польше. В 1939 году польская армия столкнулась с советскими войсками, но Т-35 применялся ограниченно.</p>
+                <p><strong>Интересный факт:</strong> Т-35 был самым большим советским танком своего времени, но из-за низкой надежности использовался в основном для парадов.</p>
+                <p><strong>Источник фото:</strong> Wikimedia Commons, Creative Commons Attribution-Share Alike 3.0.</p>
+            </div>
+            <div id="t37" class="tab-content">
+                <h2 class="text-2xl font-semibold mb-4">Т-37 (1933)</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/T-37A_tank.jpg" alt="Т-37" class="mb-4">
+                <p><strong>История:</strong> Легкий плавающий танк для разведки, разработан на базе британского Vickers. Производился в 1933–1936 годах.</p>
+                <p><strong>Характеристики:</strong> 7,62-мм пулемет, броня до 9 мм, двигатель 40 л.с., скорость до 35 км/ч, плавал со скоростью 6 км/ч.</p>
+                <p><strong>Нововведения:</strong> Способность плавать, компактная конструкция.</p>
+                <p><strong>Польша:</strong> Т-37 использовался советскими войсками в 1939 году во время Польской кампании, но не состоял на вооружении Польши и не производился там.</p>
+                <p><strong>Интересный факт:</strong> Т-37 был первым серийным плавающим танком СССР, но слабая броня делала его уязвимым.</p>
+                <p><strong>Источник фото:</strong> Wikimedia Commons, Public Domain.</p>
+            </div>
+            <div id="t38" class="tab-content">
+                <h2 class="text-2xl font-semibold mb-4">Т-38 (1936)</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/T-38_tank.jpg" alt="Т-38" class="mb-4">
+                <p><strong>История:</strong> Улучшенная версия Т-37, легкий плавающий танк для разведки. Производился в 1936–1939 годах.</p>
+                <p><strong>Характеристики:</strong> 20-мм пушка (в некоторых модификациях), броня до 9 мм, двигатель 40 л.с., скорость до 40 км/ч.</p>
+                <p><strong>Нововведения:</strong> Улучшенная плавучесть, усиленное вооружение по сравнению с Т-37.</p>
+                <p><strong>Польша:</strong> Т-38 применялся советскими войсками в 1939 году в Польше, но не использовался польской армией и не производился в Польше.</p>
+                <p><strong>Интересный факт:</strong> Т-38 мог пересекать реки, но его тонкая броня не выдерживала даже легкого огня.</p>
+                <p><strong>Источник фото:</strong> Wikimedia Commons, Public Domain.</p>
+            </div>
+            <div id="t34" class="tab-content">
+                <h2 class="text-2xl font-semibold mb-4">Т-34 (1940)</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/T-34_Model_1943.jpg" alt="Т-34 Model 1943" class="mb-4">
+                <p><strong>История:</strong> Средний танк Второй мировой войны, разработан Михаилом Кошкиным. Массовое производство началось в 1940 году.</p>
+                <p><strong>Характеристики:</strong> 76,2-мм пушка Л-11/Ф-34, броня до 45 мм, двигатель В-2 (500 л.с.), скорость до 54 км/ч.</p>
+                <p><strong>Нововведения:</strong> Наклонная броня, дизельный двигатель, высокая технологичность.</p>
+                <p><strong>Польша:</strong> Т-34 использовался 1-й польской армией (сформированной в СССР) в 1944–1945 годах. После войны Польша получила множество Т-34, но не производила их.</p>
+                <p><strong>Интересный факт:</strong> Т-34 шокировал Вермахт в 1941 году своей живучестью и стал символом Победы.</p>
+                <p><strong>Источник фото:</strong> Wikimedia Commons, Creative Commons Attribution-Share Alike 3.0.</p>
+            </div>
+            <div id="t40" class="tab-content">
+                <h2 class="text-2xl font-semibold mb-4">Т-40 (1940)</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/T-40_tank.jpg" alt="Т-40" class="mb-4">
+                <p><strong>История:</strong> Последний советский плавающий танк перед войной, разработан для разведки. Производился в 1940–1941 годах.</p>
+                <p><strong>Характеристики:</strong> 12,7-мм пулемет или 20-мм пушка, броня до 14 мм, двигатель 85 л.с., скорость до 44 км/ч.</p>
+                <p><strong>Нововведения:</strong> Улучшенная броня и вооружение по сравнению с Т-38, сохранил плавучесть.</p>
+                <p><strong>Польша:</strong> Т-40 не использовался польской армией и не производился в Польше. Мог применяться советскими войсками в 1939–1941 годах.</p>
+                <p><strong>Интересный факт:</strong> Т-40 был последним плавающим танком СССР перед переходом к более тяжелым машинам.</p>
+                <p><strong>Источник фото:</strong> Wikimedia Commons, Public Domain.</p>
+            </div>
+            <div id="t44" class="tab-content">
+                <h2 class="text-2xl font-semibold mb-4">Т-44 (1944)</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/T-44_tank.jpg" alt="Т-44" class="mb-4">
+                <p><strong>История:</strong> Средний танк, разработан как переходная модель между Т-34 и Т-55. Производился с 1944 года.</p>
+                <p><strong>Характеристики:</strong> 85-мм пушка, броня до 90 мм, двигатель 520 л.с., скорость до 51 км/ч.</p>
+                <p><strong>Нововведения:</strong> Поперечное расположение двигателя, улучшенная подвеска, основа для Т-55.</p>
+                <p><strong>Польша:</strong> Т-44 не состоял на вооружении Польши и не производился там, но его технологии повлияли на польские Т-34-85 и Т-55.</p>
+                <p><strong>Интересный факт:</strong> Т-44 не участвовал в боях Второй мировой, но стал прототипом для послевоенных танков.</p>
+                <p><strong>Источник фото:</strong> Wikimedia Commons, Creative Commons Attribution-Share Alike 3.0.</p>
+            </div>
+            <div id="t55" class="tab-content">
+                <h2 class="text-2xl font-semibold mb-4">Т-55 (1958)</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/T-55A_1.jpg" alt="Т-55А" class="mb-4">
+                <p><strong>История:</strong> Основной боевой танк, разработан на базе Т-44. Производился с 1958 года.</p>
+                <p><strong>Характеристики:</strong> 100-мм пушка, броня до 100 мм, двигатель 580 л.с., скорость до 50 км/ч.</p>
+                <p><strong>Нововведения:</strong> Защита от радиации, стабилизатор пушки, высокая надежность.</p>
+                <p><strong>Польша:</strong> Производился по лицензии на заводе Bumar-Łabędy с 1964 года. Выпущены тысячи Т-55, включая Т-55АМ Merida с улучшенной электроникой.</p>
+                <p><strong>Интересный факт:</strong> Т-55 — один из самых массовых танков, произведено более 100 000 единиц.</p>
+                <p><strong>Источник фото:</strong> Wikimedia Commons, Creative Commons Attribution-Share Alike 3.0.</p>
+            </div>
+            <div id="t62" class="tab-content">
+                <h2 class="text-2xl font-semibold mb-4">Т-62 (1961)</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/T-62_1.jpg" alt="Т-62" class="mb-4">
+                <p><strong>История:</strong> Основной боевой танк, переходная модель между Т-55 и Т-72. Производился с 1961 года.</p>
+                <p><strong>Характеристики:</strong> 115-мм гладкоствольная пушка, броня до 100 мм, двигатель 580 л.с., скорость до 50 км/ч.</p>
+                <p><strong>Нововведения:</strong> Первая в мире гладкоствольная пушка, улучшенная подвеска.</p>
+                <p><strong>Польша:</strong> Польша получила ограниченное количество Т-62 из СССР в 1970-х годах для обучения и резерва, но не производила их.</p>
+                <p><strong>Интересный факт:</strong> Т-62 показал высокую живучесть в Афганистане.</p>
+                <p><strong>Источник фото:</strong> Wikimedia Commons, Creative Commons Attribution-Share Alike 3.0.</p>
+            </div>
+            <div id="t72" class="tab-content">
+                <h2 class="text-2xl font-semibold mb-4">Т-72 (1973)</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/T-72M1_1.jpg" alt="Т-72М1" class="mb-4">
+                <p><strong>История:</strong> Основной боевой танк холодной войны, разработан Уралвагонзаводом.</p>
+                <p><strong>Характеристики:</strong> 125-мм пушка, композитная броня, двигатель 780 л.с., скорость до 60 км/ч.</p>
+                <p><strong>Нововведения:</strong> Автомат заряжания, динамическая защита, компактная компоновка.</p>
+                <p><strong>Польша:</strong> Производился по лицензии на заводе Bumar-Łabędy с 1980-х годов, выпущено около 1600 единиц. Разработан PT-91 Twardy на базе Т-72.</p>
+                <p><strong>Интересный факт:</strong> Т-72 экспортировался в 40 стран и стал основой для Т-90.</p>
+                <p><strong>Источник фото:</strong> Wikimedia Commons, Creative Commons Attribution-Share Alike 3.0.</p>
+            </div>
+            <div id="t90" class="tab-content">
+                <h2 class="text-2xl font-semibold mb-4">Т-90 (1992)</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/T-90A_1.jpg" alt="Т-90А" class="mb-4">
+                <p><strong>История:</strong> Современный основной боевой танк, разработан на базе Т-72. Т-90М «Прорыв» — новейшая модификация.</p>
+                <p><strong>Характеристики:</strong> 125-мм пушка, броня с динамической защитой, двигатель 1000 л.с., скорость до 65 км/ч.</p>
+                <p><strong>Нововведения:</strong> Управляемые ракеты, тепловизионные прицелы, новая башня (Т-90М).</p>
+                <p><strong>Польша:</strong> Т-90 не использовался и не производился в Польше. Польша перешла на Leopard 2 и PT-91 Twardy.</p>
+                <p><strong>Интересный факт:</strong> Т-90М может поражать вертолеты ракетами на расстоянии до 5 км.</p>
+                <p><strong>Источник фото:</strong> Wikimedia Commons, Creative Commons Attribution-Share Alike 4.0.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const buttons = document.querySelectorAll('.tab-button');
+        const contents = document.querySelectorAll('.tab-content');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                contents.forEach(content => {
+                    content.classList.remove('active');
+                    if (content.id === tabId) {
+                        content.classList.add('active');
+                    }
+                });
+                buttons.forEach(btn => btn.classList.remove('bg-blue-600'));
+                button.classList.add('bg-blue-600');
+            });
+        });
+    </script>
+</body>
+</html>
